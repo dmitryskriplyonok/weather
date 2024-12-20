@@ -80,6 +80,10 @@
                     </p>
                 @endif
             @endif
+
+            <x-label for="city" value="{{ __('City') }}" class="mt-2" />
+            <x-input id="city" type="text" class="mt-1 block w-full" wire:model="city" />
+            <x-input-error for="city" class="mt-2" />
         </div>
     </x-slot>
 
